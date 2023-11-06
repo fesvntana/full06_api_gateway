@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "6f52b7fc-62f5-4de2-b823-2126bf941ad1",
+		"name": "API Gateway",
+		"description": "Coleção de testes para atividade API Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30962031"
+	},
+	"item": [
+		{
+			"name": "Criar Registro (OS)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"numero\": 0,\r\n    \"Descricao\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/os/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						""
+					]
+				},
+				"description": "Insere Ordem Serviço"
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Registro (Equipamento)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"id\":0,\r\n            \"numero\":0,\r\n            \"indice\":0,\r\n            \"Descricao\":\"\",\r\n            \"Problema\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/os/:numero/equipamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						":numero",
+						"equipamento"
+					],
+					"variable": [
+						{
+							"key": "numero",
+							"value": ""
+						}
+					]
+				},
+				"description": "Insere Equipamento por Numero vinculado a OS"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Registros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/os/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						""
+					]
+				},
+				"description": "Busca Todos os Registros"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Registro por Numero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/os/:numero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						":numero"
+					],
+					"variable": [
+						{
+							"key": "numero",
+							"value": ""
+						}
+					]
+				},
+				"description": "Busca OS por Numero"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Equipamento por Numero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/os/:numero/equipamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						":numero",
+						"equipamento"
+					],
+					"variable": [
+						{
+							"key": "numero",
+							"value": ""
+						}
+					]
+				},
+				"description": "Buscar Equipamento por Numero"
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Equipamento por Descrição",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/os/equipamento/:desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"equipamento",
+						":desc"
+					],
+					"variable": [
+						{
+							"key": "desc",
+							"value": ""
+						}
+					]
+				},
+				"description": "Busca Equipamento por Descrição"
+			},
+			"response": []
+		},
+		{
+			"name": "Busca OS por Numero e Equipamento por Indice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/os/:numero/equipamento/:indice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						":numero",
+						"equipamento",
+						":indice"
+					],
+					"variable": [
+						{
+							"key": "numero",
+							"value": ""
+						},
+						{
+							"key": "indice",
+							"value": ""
+						}
+					]
+				},
+				"description": "Busca OS por Numero e Equipamento por Indice"
+			},
+			"response": []
+		}
+	]
+}

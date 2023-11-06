@@ -15,9 +15,10 @@ GET /api/v1/os/equipamento/:desc<br/>
 
 # Arquivos :
 
-bdJSON/db.JSON: Arquivo usado como banco de dados de extensão JSON.<br/>
-routes/api.js: Arquivo principal com os enredeços de rotas desenvolvidos<br/>
-/index.js: Arquivo de inicialização do servidor executado no DockerFile<br/>
+- bdJSON/db.JSON: Arquivo usado como banco de dados de extensão JSON.<br/>
+- routes/api.js: Arquivo principal com os enredeços de rotas desenvolvidos<br/>
+- /index.js: Arquivo de inicialização do servidor executado no DockerFile<br/>
+- /API Gateway.postman_collection.json: Coleção com requests para teste.
 
 # Execução
 
