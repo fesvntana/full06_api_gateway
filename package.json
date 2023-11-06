@@ -1,0 +1,23 @@
+{
+  "name": "api_gateway",
+  "version": "1.0.0",
+  "description": "Trabalho de API Gateway focado no desenvolvimento de uma API na linguagem Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDarkLightning56/APIGateway_full_06.git"
+  },
+  "author": "Renan Correa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheDarkLightning56/APIGateway_full_06/issues"
+  },
+  "homepage": "https://github.com/TheDarkLightning56/APIGateway_full_06#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
